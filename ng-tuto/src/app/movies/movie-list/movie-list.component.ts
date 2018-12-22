@@ -8,11 +8,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MovieListComponent implements OnInit {
 
+  selectedMovie: number;
+
   @Input() movies: Movie[];
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  selectMovie(movieNumber: number): void {
+    this.selectedMovie = movieNumber;
   }
 
 }
