@@ -1,3 +1,4 @@
+import { MovieUtils } from './../../assets/data/movie-utils';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent implements OnInit {
+
+  movies = MovieUtils.movies;
 
   constructor() { }
 
