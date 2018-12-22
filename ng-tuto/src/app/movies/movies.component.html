@@ -1,7 +1,3 @@
 <h2>Mes films</h2>
 
-<div *ngFor="let movie of movies" class="card">
-    <img mat-card-image [src]="movie.image" [alt]="movie.id">
-    <span class="card-title">{{ movie.name }}</span>
-    <p>{{ movie.description }}</p>
-</div>
+<app-movie-list [movies]="movies"></app-movie-list>
