@@ -1,5 +1,4 @@
+<p>Film sélectionné : {{ selectedMovie }}</p>
 <div *ngFor="let movie of movies" class="card">
-    <img mat-card-image [src]="movie.image" [alt]="movie.id">
-    <span class="card-title">{{ movie.name }}</span>
-    <p>{{ movie.description }}</p>
+  <app-movie-card [movie]="movie" (selected)="selectMovie($event)"></app-movie-card>
 </div>

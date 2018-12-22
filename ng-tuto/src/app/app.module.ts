@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MatCardModule } from '@angular/material';
+import { MovieListComponent } from './movies/movie-list/movie-list.component';
+import { MovieCardComponent } from './movies/movie-card/movie-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MoviesComponent
+    MoviesComponent,
+    MovieListComponent,
+    MovieCardComponent
   ],
   imports: [
     BrowserAnimationsModule,
