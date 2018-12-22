@@ -1,5 +1,6 @@
 import { MovieUtils } from './../../assets/data/movie-utils';
 import { Component, OnInit } from '@angular/core';
+import { Movie } from '../models/movie.model';
 
 @Component({
   selector: 'app-movies',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  movies: any[] = MovieUtils.movies;
+  movies: Movie[] = MovieUtils.movies;
 
   constructor() { }
 
