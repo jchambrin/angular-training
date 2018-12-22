@@ -1,0 +1,5 @@
+<div *ngFor="let movie of movies" class="card">
+    <img mat-card-image [src]="movie.image" [alt]="movie.id">
+    <span class="card-title">{{ movie.name }}</span>
+    <p>{{ movie.description }}</p>
+</div>

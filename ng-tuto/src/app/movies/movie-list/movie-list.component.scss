@@ -1,0 +1,14 @@
+.card {
+    width: 700px;
+    margin-bottom: 50px;
+    .card-title {
+        display: block;
+        font-weight: 700;
+    }
+    img {
+        max-height: 100px;
+    }
+    p {
+        margin-top: 5px;
+    }
+}
