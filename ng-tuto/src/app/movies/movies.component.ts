@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoviesComponent implements OnInit {
 
-  movies = MovieUtils.movies;
+  movies: any[] = MovieUtils.movies;
 
   constructor() { }
 
