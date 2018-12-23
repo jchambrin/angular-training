@@ -1,3 +1,5 @@
 <h2>Mes films</h2>
-
-<app-movie-list [movies]="movies"></app-movie-list>
+<div [formGroup]="filterGroup">
+    <input type="text" name="filter" formControlName="filter"/>
+</div>
+<app-movie-list [movies]="moviesFiltered"></app-movie-list>
