@@ -1,4 +1,4 @@
 <p>Film sélectionné : {{ selectedMovie }}</p>
-<div *ngFor="let movie of movies" class="card">
+<div *ngFor="let movie of movies" class="card" [routerLink]="['/movies', movie.id]">
   <app-movie-card [movie]="movie" (selected)="selectMovie($event)"></app-movie-card>
 </div>

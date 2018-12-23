@@ -9,6 +9,10 @@ export class MoviesService {
 
   constructor(private http: HttpClient) { }
 
+  public getById(id: string): Observable<Object> {
+    return this.http.get(`/assets/data/${id}.json`);
+  }
+
   public getMovies(): Observable<Object> {
     return this.http.get('/assets/data/movies.json');
   }
