@@ -1,3 +1,8 @@
-<p *ngIf="movie">
-  {{ movie.name }}
-</p>
+<div *ngIf="movie">
+  <input type="text" name="name" [(ngModel)]="movie.name"/>
+
+    {{ movie.name }}
+</div>
+
+
+

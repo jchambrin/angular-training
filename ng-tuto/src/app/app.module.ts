@@ -9,6 +9,7 @@ import { MatCardModule } from '@angular/material';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { MovieCardComponent } from './movies/movie-card/movie-card.component';
 import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MovieDetailsComponent } from './movies/movie-details/movie-details.comp
     BrowserAnimationsModule,
     AppRoutingModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
