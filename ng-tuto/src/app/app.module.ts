@@ -9,7 +9,7 @@ import { MatCardModule } from '@angular/material';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { MovieCardComponent } from './movies/movie-card/movie-card.component';
 import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     MatCardModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

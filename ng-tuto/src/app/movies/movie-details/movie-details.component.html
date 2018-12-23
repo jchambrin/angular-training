@@ -1,8 +1,4 @@
-<div *ngIf="movie">
-  <input type="text" name="name" [(ngModel)]="movie.name"/>
-
-    {{ movie.name }}
-</div>
-
-
-
+<form [formGroup]="formGroup" (ngSubmit)="submit">
+  <input type="text" name="name" formControlName="name" />
+  <button *ngIf="formGroup.valid" type="submit">Valider</button>
+</form>
