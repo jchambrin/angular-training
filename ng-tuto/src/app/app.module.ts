@@ -8,13 +8,15 @@ import { MoviesComponent } from './movies/movies.component';
 import { MatCardModule } from '@angular/material';
 import { MovieListComponent } from './movies/movie-list/movie-list.component';
 import { MovieCardComponent } from './movies/movie-card/movie-card.component';
+import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     MovieListComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserAnimationsModule,
