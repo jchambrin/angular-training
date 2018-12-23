@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
@@ -18,7 +19,8 @@ import { MovieCardComponent } from './movies/movie-card/movie-card.component';
   imports: [
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
